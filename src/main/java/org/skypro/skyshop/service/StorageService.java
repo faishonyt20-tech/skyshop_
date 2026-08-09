@@ -74,4 +74,9 @@ public class StorageService {
         result.addAll(articleMap.values());
         return result;
     }
+
+    // НОВЫЙ МЕТОД
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(productMap.get(id));
+    }
 }
